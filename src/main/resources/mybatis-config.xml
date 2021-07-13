@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+<!--    <typeHandlers>-->
+<!--        <typeHandler handler="com.jeff.porter.common.mybatis.typehandler.LocalTimeTypeHandler"-->
+<!--                     javaType="org.joda.time.LocalTime"/>-->
+<!--    </typeHandlers>-->
+<!--    <environments default="db2">-->
+<!--        <environment id="db2">-->
+<!--            <transactionManager type="JDBC"></transactionManager>-->
+<!--            <dataSource type="POOLED"></dataSource>-->
+<!--        </environment>-->
+<!--    </environments>-->
+    <databaseIdProvider type="DB_VENDOR" >
+        <property name="SQL Server" value="sqlserver"/>
+        <property name="DB2" value="db2"/>
+        <property name="DB2/LINUXX8664" value="db2"/>
+        <property name="Oracle" value="oracle"/>
+    </databaseIdProvider>
+
+</configuration>

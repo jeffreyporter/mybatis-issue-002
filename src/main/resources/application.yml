@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    name: db2
+    url: jdbc:db2://localhost:51000/CDB
+    username: db2inst1
+    password: ibmdb2
+    hikari:
+      schema: PCMSDM
+    environment: db2
+  jpa:
+    database-platform: org.hibernate.dialect.DB2Dialect
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+      dialect: org.hibernate.dialect.DB2Dialect
+      default_schema: PCMSDM
+mybatis:
+  type-handlers-package: com.jeff.porter.testservice.mybatis.typehandler
+  config-location: classpath:mybatis-config.xml
+logging:
+  level:
+    org: INFO

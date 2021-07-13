@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jeff.porter.testservice.data.mapper.PriceMapper">
+
+  <resultMap id="thePriceVO" type="com.jeff.porter.testservice.data.valueobjects.PriceVO">
+
+  </resultMap>
+
+<!--  <select id="getPrices" resultMap="thePriceVO"  >-->
+<!--  <select id="getPrices" resultMap="thePriceVO"  databaseId="db2">-->
+
+
+  <select id="getPrices" resultMap="thePriceVO"  databaseId="db2">
+    SELECT
+      *
+    FROM RELEASED_PRICE_JSON
+  </select>
+
+</mapper>
